@@ -1,0 +1,136 @@
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Fira+Sans" rel="stylesheet">
+<style>
+	
+.btn1 {
+  box-sizing: border-box;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  background-color: #e74c3c;
+  border: 2px solid #e74c3c; 
+  border-radius: 0.6em;
+  color: White;
+  cursor: pointer;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-item-align: center;
+      align-self: center;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-decoration: none;
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+.btn1:hover, .btn1:focus {
+  color: #fff;
+  outline: 0;
+}
+
+
+
+:root {
+	--primary-c: #2196F3;
+	--secondary-c: #B2D7F5;
+	
+	--white: #FDFBFB;
+	
+	--text: #082943;	
+	--bg: var(--primary-c);
+}
+
+
+
+html, body {
+	height: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+  background-color: var(--bg);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+	font-family: 'Raleway', sans-serif;
+	color: var(--text);
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+ul {
+	list-style-type: none;
+	padding-left: 50px;
+	margin: 0;
+}
+
+li {
+	display: block;
+	position: relative;
+	padding: 20px 0px;
+	font-size:20px;
+}
+
+h2 {
+	margin: 10px 0;
+	font-weight: 900;
+}
+
+
+.card {
+	display: flex;
+	flex-direction: column;	
+	background-color:white;
+	filter: blur(0px);
+    -webkit-filter: blur(0px);
+	
+	width: 300px;
+	padding: 20px 25px;
+	border-radius: 20px;
+	box-shadow: 0 19px 38px rgba(0, 0, 0, 0.13);
+	align:center;
+}
+
+
+
+input[type=radio] {
+	height: 18px;
+    width: 20px;
+    font-size: 40px;
+
+}
+
+
+
+</style>
+
+</head>
+<body background="/static/images/pd4.jpg" style="background-size: cover; ">
+
+<form action ="http://127.0.0.1:5000/nxt" method = "POST">
+<div class="card">
+	<h2>Select Your Gender</h2>
+	
+	<ul>
+		<li>
+			<input type="radio" name="g"  required value="1" />Male
+			</li>
+		<li>
+			<input type="radio" name="g"  value="0" />Female
+			</li>
+	
+	</ul>
+</div>
+<br><button  align='right' class="btn1 first"  >Next  >> </button>
+</form>
+</body>
+</html>

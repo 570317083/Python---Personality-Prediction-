@@ -1,0 +1,69 @@
+<html>
+<head>
+	
+	<style>
+	@import url('https://fonts.googleapis.com/css?family=Gloria+Hallelujah');
+body, html {
+  height: 100%;
+}
+
+.button {
+	
+  float: right;	
+  filter: blur(0px);
+  -webkit-filter: blur(0px);
+  padding: 20px;
+  width: 250px;
+  background-color: #f4511e;
+  text-align: center;
+  cursor: pointer;
+  margin-top:450px;
+  margin-right:30px;
+  border:0px;
+  border-radius:10px;
+  font-size:25px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 1;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+
+
+	</style>
+</head>
+<body background="/static/images/whoami2.jpg" style="height: 100%; 
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+  ">
+
+
+	<form action="http://127.0.0.1:5000/displaygen" >
+		
+			<br><button class="button"><span>Start Test</span></button></form>
+</	div>		
+</body>
+</html>
